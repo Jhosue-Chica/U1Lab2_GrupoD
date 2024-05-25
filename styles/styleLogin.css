@@ -1,0 +1,48 @@
+.login-body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f0f0f0; /* Esto es opcional, para darle un fondo gris claro a la página */
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 20%;
+}
+
+.login-container h1 {
+    color: red;
+    font-family: Arial, sans-serif;
+}
+
+.login-container img {
+    width: 100px;
+}
+
+.login-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.login-container button {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 70%;
+}
+
+.login-container button:hover {
+    background-color: darkred;
+}

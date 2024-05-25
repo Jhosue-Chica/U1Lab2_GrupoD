@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - KFC</title>
+    <link rel="stylesheet" href="../styles/styleLogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="../scripts/login.js"></script>
+    <script src="../scripts/templateFooter.js"></script>
+</head>
+
+<body>
+
+    <div class="login-body">
+        <div class="login-container">
+            <h1>Iniciar sesión</h1>
+            <img src="../assets/img/KFC_Logo.svg.png" alt="KFC Logo">
+            <input type="text" id="username" placeholder="Usuario">
+            <input type="password" id="password" placeholder="Contraseña">
+            <button onclick="login()">Ingresar</button>
+        </div>
+    </div>
+
+    
+    <template id="footer-template">
+        <style>
+            .footer-container {
+                background-color: #2b2b2b;
+                color: white;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-content {
+                display: flex;
+                justify-content: space-between;
+                font-family: Arial, Helvetica, sans-serif;
+                flex-wrap: wrap;
+                max-width: 1200px;
+                width: 100%;
+            }
+
+            .footer-section {
+                flex: 1;
+                min-width: 200px;
+                margin: 10px;
+            }
+
+            .logo-section img {
+                width: 100px;
+            }
+
+            .app-links img {
+                width: 135px;
+                margin: 5px;
+            }
+
+            .footer-social {
+                margin-top: 20px;
+            }
+
+            .footer-social a {
+                color: white;
+                margin: 0 10px;
+                font-size: 1.5em;
+            }
+
+            .footer-social a:hover {
+                color: #ff0000;
+            }
+
+            @media (max-width: 768px) {
+                .footer-content {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .footer-section {
+                    text-align: center;
+                }
+            }
+        </style>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section logo-section">
+                    <img src="../assets/img/logofooter.png" alt="KFC Logo">
+                    <p>Menu - Compra tu combo en línea - KFC Ecuador</p>
+                    <p>Conoce donde se encuentran las ubicaciones de las tiendas de KFC en Ecuador, utiliza nuestro mapa para localizar el local de KFC más cercano a ti.</p>
+                </div>
+                <div class="footer-section contact-section">
+                    <h4>Contáctanos</h4>
+                    <p>Edificio Belmonte, piso 1</p>
+                    <p>Llámanos: 023920070</p>
+                    <p>Quito, P, Ecuador</p>
+                    <p>Email: kfcadomicilio@kfc.com.ec</p>
+                    <p>Corea 126 y Amazonas</p>
+                </div>
+                <div class="footer-section policy-section">
+                    <h4>Políticas</h4>
+                    <p>Términos y Condiciones: Garantía de 30 minutos ó Gratis</p>
+                    <p>Reembolsos y devoluciones</p>
+                    <p>Política de Privacidad de Datos</p>
+                </div>
+                <div class="footer-section app-section">
+                    <h4>Descarga nuestra APP</h4>
+                    <div class="app-links">
+                        <a href="#"><img src="path/to/appstore.png" alt="App Store"></a>
+                        <a href="#"><img src="path/to/playstore.png" alt="Google Play"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </template>
+
+</body>
+
+<footer-component></footer-component>
+
+</html>
