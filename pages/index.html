@@ -69,7 +69,8 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            <button type="button" class="btn btn-primary">Realizar Pago</button>
+                            <button type="button" class="btn btn-primary"
+                            onclick="window.location.href='../pages/pago.html'">Realizar Pago</button>
                         </div>
                     </div>
                 </div>
@@ -159,7 +160,7 @@
                     flex-direction: column;
                     align-items: center;
                 }
-    
+
                 .footer-content {
                     display: flex;
                     justify-content: space-between;
@@ -168,42 +169,42 @@
                     max-width: 1200px;
                     width: 100%;
                 }
-    
+
                 .footer-section {
                     flex: 1;
                     min-width: 200px;
                     margin: 10px;
                 }
-    
+
                 .logo-section img {
                     width: 100px;
                 }
-    
+
                 .app-links img {
                     width: 135px;
                     margin: 5px;
                 }
-    
+
                 .footer-social {
                     margin-top: 20px;
                 }
-    
+
                 .footer-social a {
                     color: white;
                     margin: 0 10px;
                     font-size: 1.5em;
                 }
-    
+
                 .footer-social a:hover {
                     color: #ff0000;
                 }
-    
+
                 @media (max-width: 768px) {
                     .footer-content {
                         flex-direction: column;
                         align-items: center;
                     }
-    
+
                     .footer-section {
                         text-align: center;
                     }
@@ -214,7 +215,8 @@
                     <div class="footer-section logo-section">
                         <img src="../assets/img/logofooter.png" alt="KFC Logo">
                         <p>Menu - Compra tu combo en línea - KFC Ecuador</p>
-                        <p>Conoce donde se encuentran las ubicaciones de las tiendas de KFC en Ecuador, utiliza nuestro mapa para localizar el local de KFC más cercano a ti.</p>
+                        <p>Conoce donde se encuentran las ubicaciones de las tiendas de KFC en Ecuador, utiliza nuestro
+                            mapa para localizar el local de KFC más cercano a ti.</p>
                     </div>
                     <div class="footer-section contact-section">
                         <h4>Contáctanos</h4>
@@ -233,8 +235,8 @@
                     <div class="footer-section app-section">
                         <h4>Descarga nuestra APP</h4>
                         <div class="app-links">
-                            <a href="#"><img src="path/to/appstore.png" alt="App Store"></a>
-                            <a href="#"><img src="path/to/playstore.png" alt="Google Play"></a>
+                            <a href="#"><img src="..\assets\img\AppStore.png" alt="App Store" style="width: 75px;"></a>
+                            <a href="#"><img src="..\assets\img\google.png" alt="Google Play" style="width: 35px;"></a>
                         </div>
                     </div>
                 </div>
