@@ -17,7 +17,7 @@ class RedHeader extends HTMLElement {
       let script = document.createElement('script');
       script.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js';
       script.onload = () => {
-          // Añadir el evento de clic para abrir el modal
+         
           const openModalLink = shadowRoot.querySelector('#open-modal-link');
           openModalLink.addEventListener('click', (e) => {
               e.preventDefault();
