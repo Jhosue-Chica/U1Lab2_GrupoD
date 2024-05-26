@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e8e8e8;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ff3030;
+    padding-top: 20px;
+    transition: 0.3s;
+    overflow-x: hidden;
+    margin-top: 70px;
+
+}
+
+.sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #ff6e6e;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s;
+}
+
+.toggle-btn {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    background-color: #ff6e6e;
+    border: none;
+    position: sticky;
+    top: 10px;
+    left: 260px;
+    transition: left 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #ff3030;
+}
+
+.sidebar.closed {
+    width: 0;
+    padding-top: 60px;
+}
+
+.sidebar.closed a {
+    display: none;
+}
+
+.main-content.closed {
+    margin-left: 0;
+}
+
+.toggle-btn.closed {
+    left: 10px;
+}
+
+/* Estilos para los productos */
+#productos-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 70em; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    gap: 30px; /* Espacio entre los productos horizontal */
+}
+
+/* Estilos para cada producto */
+.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: calc(20% - 20px); /* Calcula el ancho para 5 productos por fila con espacio entre ellos */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Espacio entre los productos vertical */
+}
